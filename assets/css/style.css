@@ -119,7 +119,7 @@ a:hover, a:focus, a:visited {
   color: #fff;
   font-weight: 600;
   font-size: 18px;
-  line-height: 43px;
+  line-height: 57px;
   height: 60px;
   padding: 0px 40px;
   border-radius: 40px;
@@ -200,6 +200,78 @@ a:hover, a:focus, a:visited {
   }
   header .navbar-nav {
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #banner-section {
+    background-image: url(../img/banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  #banner-section .banner-content {
+    padding: 30px 0;
+  }
+  #banner-section .banner-content h4 {
+    font-weight: 400;
+    color: #686868;
+    margin-bottom: 20px;
+  }
+  #banner-section .banner-content h1 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 18px;
+  }
+  #banner-section .banner-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #banner-section .banner-content .banner-btns {
+    margin-top: 57px;
+  }
+  #banner-section .banner-content .banner-btns a {
+    font-size: 13px;
+    line-height: 32px;
+    height: 35px;
+    padding: 0px 20px;
+    color: #FE6282;
+  }
+  #banner-section .banner-content .banner-btns a:hover {
+    color: #242f51;
+  }
+  #banner-section .banner-content .banner-btns .btn-custom {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #banner-section {
+    background-size: contain;
+  }
+  #banner-section .banner-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #banner-section .banner-content {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #banner-section {
+    padding: 45px 0px;
+  }
+  #banner-section .banner-content {
+    padding-top: 110px;
+  }
+  #banner-section .banner-img {
+    width: fit-content;
+    border-radius: 60px;
+    box-shadow: 0 0 30px #d4d4d4;
   }
 }
 /*# sourceMappingURL=style.css.map */
