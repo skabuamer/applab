@@ -216,19 +216,19 @@ a:hover, a:focus, a:visited {
   #banner-section .banner-content h4 {
     font-weight: 400;
     color: #686868;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   #banner-section .banner-content h1 {
     font-size: 35px;
     line-height: 45px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
   #banner-section .banner-content p {
     font-size: 14px;
     line-height: 24px;
   }
   #banner-section .banner-content .banner-btns {
-    margin-top: 57px;
+    margin-top: 35px;
   }
   #banner-section .banner-content .banner-btns a {
     font-size: 13px;
@@ -265,13 +265,71 @@ a:hover, a:focus, a:visited {
   #banner-section {
     padding: 45px 0px;
   }
-  #banner-section .banner-content {
-    padding-top: 110px;
+  #banner-section .banner-content h4 {
+    font-weight: 400;
+    color: #686868;
+  }
+  #banner-section .banner-content h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  #banner-section .banner-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #banner-section .banner-content .banner-btns a {
+    font-size: 15px;
+    line-height: 37px;
+    height: 40px;
+    padding: 0px 25px;
+    color: #FE6282;
+  }
+  #banner-section .banner-content .banner-btns a:hover {
+    color: #242f51;
   }
   #banner-section .banner-img {
     width: fit-content;
     border-radius: 60px;
     box-shadow: 0 0 30px #d4d4d4;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #banner-section .banner-content {
+    padding-top: 110px;
+  }
+  #banner-section .banner-content h4 {
+    margin-bottom: 20px;
+  }
+  #banner-section .banner-content h1 {
+    margin-bottom: 18px;
+  }
+  #banner-section .banner-content .banner-btns {
+    margin-top: 53px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #banner-section .banner-content {
+    padding-top: 110px;
+  }
+  #banner-section .banner-content h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  #banner-section .banner-content p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  #banner-section .banner-content .banner-btns a {
+    font-size: 15px;
+    line-height: 57px;
+    height: 60px;
+    padding: 0px 40px;
+    color: #FE6282;
+  }
+  #banner-section .banner-content .banner-btns a:hover {
+    color: #242f51;
   }
 }
 /*# sourceMappingURL=style.css.map */
