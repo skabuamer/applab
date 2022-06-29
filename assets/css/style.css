@@ -117,7 +117,7 @@ a:hover, a:focus, a:visited {
   display: inline-block;
   background-color: #FE6282;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 57px;
   height: 60px;
@@ -144,7 +144,7 @@ a:hover, a:focus, a:visited {
 }
 
 /*  */
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479px) {
   header {
     padding: 20px 0px;
   }
@@ -167,25 +167,25 @@ a:hover, a:focus, a:visited {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 575px) {
   header .offcanvas.offcanvas-start {
     width: 60%;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 767px) {
   header .offcanvas.offcanvas-start {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 991px) {
   header .offcanvas.offcanvas-start {
     width: 40%;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1199px) {
   header {
     padding: 40px 0px;
   }
@@ -203,19 +203,134 @@ a:hover, a:focus, a:visited {
   }
 }
 
-@media screen and (min-width: 320px) {
-  #banner-section {
-    background-image: url(../img/banner-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-  }
+#banner-section {
+  padding: 45px 0px;
+  background-image: url(../img/banner-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+#banner-section .banner-content {
+  padding-top: 110px;
+}
+
+#banner-section .banner-content h4 {
+  font-weight: 400;
+  color: #686868;
+  margin-bottom: 20px;
+}
+
+#banner-section .banner-content h1 {
+  margin-bottom: 18px;
+}
+
+#banner-section .banner-content p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+#banner-section .banner-content .banner-btns {
+  margin-top: 53px;
+}
+
+#banner-section .banner-content .banner-btns a {
+  font-size: 16px;
+  line-height: 57px;
+  height: 60px;
+  padding: 0px 40px;
+  color: #FE6282;
+}
+
+#banner-section .banner-content .banner-btns a:hover {
+  color: #242f51;
+}
+
+#banner-section .banner-content .banner-btns .btn-custom {
+  color: #fff;
+}
+
+#banner-section .banner-img {
+  width: fit-content;
+  border-radius: 60px;
+  box-shadow: 0 0 30px #d4d4d4;
+}
+
+#banner-section #popup-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#banner-section #popup-video span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 60px;
+  color: #fff;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#banner-section #popup-video video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
   #banner-section .banner-content {
     padding: 30px 0;
   }
+  #banner-section .banner-content h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  #banner-section .banner-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #banner-section .banner-content .banner-btns {
+    margin-top: 35px;
+  }
+  #banner-section .banner-content .banner-btns a {
+    font-size: 15px;
+    line-height: 37px;
+    height: 40px;
+    padding: 0px 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner-section .banner-content {
+    width: 80%;
+  }
+  #banner-section #popup-video video {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #banner-section .banner-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #banner-section {
+    background-size: cover;
+  }
   #banner-section .banner-content h4 {
-    font-weight: 400;
-    color: #686868;
     margin-bottom: 10px;
   }
   #banner-section .banner-content h1 {
@@ -227,9 +342,6 @@ a:hover, a:focus, a:visited {
     font-size: 14px;
     line-height: 24px;
   }
-  #banner-section .banner-content .banner-btns {
-    margin-top: 35px;
-  }
   #banner-section .banner-content .banner-btns a {
     font-size: 13px;
     line-height: 32px;
@@ -240,127 +352,37 @@ a:hover, a:focus, a:visited {
   #banner-section .banner-content .banner-btns a:hover {
     color: #242f51;
   }
-  #banner-section .banner-content .banner-btns .btn-custom {
-    color: #fff;
-  }
-  #banner-section #popup-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-    display: none;
-  }
-  #banner-section #popup-video span {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 60px;
-    color: #fff;
-    z-index: 100;
-    cursor: pointer;
-  }
-  #banner-section #popup-video video {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
 }
 
-@media screen and (min-width: 480px) {
-  #banner-section {
-    background-size: contain;
-  }
-  #banner-section .banner-content {
-    width: 80%;
-    margin: 0 auto;
-  }
+/*-------------------------------CLIENT SECTION STYLES--------------------------------*/
+#client-section {
+  padding: 60px 0;
 }
 
-@media screen and (min-width: 576px) {
-  #banner-section .banner-content {
-    width: 100%;
-  }
+#client-section span {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #242f51;
+  text-align: center;
+  display: block;
+  margin-bottom: 45px;
 }
 
-@media screen and (min-width: 768px) {
-  #banner-section {
-    padding: 45px 0px;
-  }
-  #banner-section .banner-content h4 {
-    font-weight: 400;
-    color: #686868;
-  }
-  #banner-section .banner-content h1 {
-    font-size: 45px;
-    line-height: 60px;
-  }
-  #banner-section .banner-content p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  #banner-section .banner-content .banner-btns a {
-    font-size: 15px;
-    line-height: 37px;
-    height: 40px;
-    padding: 0px 25px;
-    color: #FE6282;
-  }
-  #banner-section .banner-content .banner-btns a:hover {
-    color: #242f51;
-  }
-  #banner-section .banner-img {
-    width: fit-content;
-    border-radius: 60px;
-    box-shadow: 0 0 30px #d4d4d4;
-  }
+#client-section .client-logo {
+  min-height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 992px) {
-  #banner-section .banner-content {
-    padding-top: 110px;
-  }
-  #banner-section .banner-content h4 {
-    margin-bottom: 20px;
-  }
-  #banner-section .banner-content h1 {
-    margin-bottom: 18px;
-  }
-  #banner-section .banner-content .banner-btns {
-    margin-top: 53px;
-  }
-  #banner-section #popup-video video {
-    width: 750px;
-  }
+#client-section .row {
+  justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  #banner-section .banner-content {
-    padding-top: 110px;
-  }
-  #banner-section .banner-content h1 {
-    font-size: 60px;
-    line-height: 75px;
-  }
-  #banner-section .banner-content p {
-    font-size: 18px;
-    line-height: 36px;
-  }
-  #banner-section .banner-content .banner-btns a {
-    font-size: 15px;
-    line-height: 57px;
-    height: 60px;
-    padding: 0px 40px;
-    color: #FE6282;
-  }
-  #banner-section .banner-content .banner-btns a:hover {
-    color: #242f51;
+@media screen and (max-width: 1199px) {
+  #client-section .row {
+    justify-content: space-evenly;
   }
 }
 /*# sourceMappingURL=style.css.map */
