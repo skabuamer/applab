@@ -125,6 +125,7 @@ a:hover, a:focus, a:visited {
   border-radius: 40px;
   text-transform: capitalize;
   border: 1px solid transparent;
+  box-shadow: 0px 10px 30px 0px rgba(255, 130, 87, 0.3);
 }
 
 .btn-custom:hover {
@@ -565,6 +566,132 @@ header .offcanvas.offcanvas-start {
 @media screen and (max-width: 479px) {
   #service-section .section-heading {
     width: 100%;
+  }
+}
+
+#about-section {
+  padding: 120px 0;
+}
+
+#about-section .about-img {
+  position: relative;
+}
+
+#about-section .about-img img {
+  width: 370px;
+}
+
+#about-section .about-img img:last-of-type {
+  position: absolute;
+  left: 130px;
+  top: 50px;
+  z-index: -1;
+}
+
+#about-section .about-content .section-heading {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+#about-section .about-content p {
+  margin-top: -6px;
+  margin-bottom: 56px;
+  color: #666e82;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+#about-section .about-content ul {
+  margin-top: -6px;
+  margin-bottom: 56px;
+}
+
+#about-section .about-content ul li {
+  margin-bottom: 10px;
+}
+
+#about-section .about-content ul li i {
+  margin-right: 10px;
+  color: #ff8257;
+}
+
+#about-section .about-content .btn-custom {
+  line-height: 63px;
+  height: 65px;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  #about-section .about-img {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  #about-section .about-img img:last-of-type {
+    left: 335px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #about-section {
+    padding: 80px 0;
+  }
+  #about-section .about-img img:last-of-type {
+    left: 235px;
+  }
+  #about-section .about-content h2 {
+    margin-bottom: 45px;
+  }
+  #about-section .about-content p {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-section {
+    padding: 80px 0;
+  }
+  #about-section .about-img {
+    text-align: left;
+  }
+  #about-section .about-img img:last-of-type {
+    left: 130px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-section {
+    padding: 80px 0;
+  }
+  #about-section .about-img {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #about-section .about-img {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #about-section .about-img img:last-of-type {
+    display: none;
+  }
+  #about-section .about-content h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #about-section .about-content {
+    text-align: center;
+  }
+  #about-section .about-content h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  #about-section .about-content ul {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
