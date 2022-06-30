@@ -132,21 +132,58 @@ a:hover, a:focus, a:visited {
   border: 1px solid #242f51;
 }
 
-.section-heading h4 {
-  color: #ff3946;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+.section-heading {
+  text-align: center;
+  margin: 0 auto;
+  width: 45%;
+}
+
+@media screen and (max-width: 991px) {
+  .section-heading {
+    width: 70%;
+  }
 }
 
 .section-heading h2 {
-  text-transform: capitalize;
+  text-decoration: underline solid #fff2ee 8px;
+  text-decoration-skip-ink: none;
 }
 
-/*  */
-@media screen and (max-width: 479px) {
+/* ---------------------------------------HEADER SECTION STYLES---------------------------------------- */
+header {
+  padding: 40px 0px;
+}
+
+header a {
+  display: inline-block;
+  margin-left: 35px;
+  color: #242f51;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+header .btn-custom {
+  height: 60px;
+  line-height: 57px;
+  padding: 0px 40px;
+  border-radius: 35px;
+}
+
+header .navbar-nav {
+  align-items: center;
+}
+
+header .offcanvas.offcanvas-start {
+  width: 40%;
+}
+
+@media screen and (max-width: 991px) {
   header {
     padding: 20px 0px;
+  }
+  header a {
+    margin-left: 15px;
   }
   header .btn-custom {
     height: 40px;
@@ -154,20 +191,9 @@ a:hover, a:focus, a:visited {
     padding: 0px 15px;
     border-radius: 5px;
   }
-  header a {
-    display: inline-block;
-    margin-left: 15px;
-    color: #242f51;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 10px;
+  header .navbar-nav {
+    align-items: flex-start;
   }
-  header .offcanvas.offcanvas-start {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 575px) {
   header .offcanvas.offcanvas-start {
     width: 60%;
   }
@@ -175,31 +201,19 @@ a:hover, a:focus, a:visited {
 
 @media screen and (max-width: 767px) {
   header .offcanvas.offcanvas-start {
-    width: 50%;
+    width: 60%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 575px) {
   header .offcanvas.offcanvas-start {
-    width: 40%;
+    width: 70%;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  header {
-    padding: 40px 0px;
-  }
-  header a {
-    margin-left: 35px;
-  }
-  header .btn-custom {
-    height: 60px;
-    line-height: 57px;
-    padding: 0px 40px;
-    border-radius: 35px;
-  }
-  header .navbar-nav {
-    align-items: center;
+@media screen and (max-width: 479px) {
+  header .offcanvas.offcanvas-start {
+    width: 80%;
   }
 }
 
@@ -218,7 +232,7 @@ a:hover, a:focus, a:visited {
 #banner-section .banner-content h4 {
   font-weight: 400;
   color: #686868;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #banner-section .banner-content h1 {
@@ -287,9 +301,15 @@ a:hover, a:focus, a:visited {
   object-fit: cover;
 }
 
+@media screen and (max-width: 1199px) {
+  #banner-section .banner-content {
+    padding-top: 50px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   #banner-section .banner-content {
-    padding: 30px 0;
+    padding-top: 30px;
   }
   #banner-section .banner-content h1 {
     font-size: 45px;
@@ -311,7 +331,11 @@ a:hover, a:focus, a:visited {
 }
 
 @media screen and (max-width: 767px) {
+  #banner-section {
+    padding: 20px 0 30px;
+  }
   #banner-section .banner-content {
+    padding: 0px;
     width: 80%;
   }
   #banner-section #popup-video video {
@@ -328,6 +352,7 @@ a:hover, a:focus, a:visited {
 
 @media screen and (max-width: 479px) {
   #banner-section {
+    padding: 20px 0;
     background-size: cover;
   }
   #banner-section .banner-content h4 {
@@ -383,6 +408,163 @@ a:hover, a:focus, a:visited {
 @media screen and (max-width: 1199px) {
   #client-section .row {
     justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #client-section span {
+    margin-bottom: 30px;
+  }
+  #client-section .client-logo {
+    min-height: 100px;
+  }
+}
+
+/*-------------------------------------------FEATURE SECTION STYLES--------------------------------------*/
+#features-section {
+  padding: 60px 0 120px;
+}
+
+#features-section .section-heading {
+  margin-bottom: 65px;
+}
+
+#features-section .single-feature {
+  display: flex;
+  margin-bottom: 65px;
+}
+
+#features-section .single-feature .single-feature-img {
+  margin-right: 50px;
+}
+
+#features-section .single-feature .single-feature-details h3 {
+  color: #000;
+  margin-bottom: 6px;
+  margin-top: -6px;
+}
+
+#features-section .single-feature .single-feature-details p {
+  margin-bottom: -8px;
+}
+
+@media screen and (max-width: 1199px) {
+  #features-section {
+    padding: 30px 0 90px;
+  }
+  #features-section .section-heading {
+    width: 50%;
+  }
+  #features-section .single-feature .single-feature-img {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #features-section {
+    padding: 10px 0 50px;
+  }
+  #features-section .section-heading {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #features-section .section-heading {
+    width: 75%;
+  }
+  #features-section .section-heading h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #features-section .section-heading {
+    width: 90%;
+  }
+  #features-section .single-feature {
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+  }
+  #features-section .single-feature .single-feature-img {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #features-section {
+    padding-bottom: 30px;
+  }
+  #features-section .section-heading {
+    width: 100%;
+  }
+  #features-section .section-heading h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+#service-section {
+  background-color: #fbf8f8;
+  padding: 120px 0px;
+}
+
+#service-section .section-heading {
+  margin-bottom: 60px;
+}
+
+#service-section .single-service {
+  text-align: center;
+  padding: 30px 15px;
+  transition: all .4s ease;
+}
+
+#service-section .single-service:hover {
+  background-color: #fff;
+}
+
+#service-section .single-service:hover h3 {
+  color: #FE6282;
+}
+
+#service-section .single-service img {
+  width: 60px;
+}
+
+#service-section .single-service h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  #service-section {
+    padding: 75px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #service-section {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #service-section .section-heading {
+    width: 80%;
+  }
+  #service-section .section-heading h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #service-section .section-heading {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

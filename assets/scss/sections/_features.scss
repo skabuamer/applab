@@ -1,0 +1,96 @@
+/*-------------------------------------------FEATURE SECTION STYLES--------------------------------------*/
+#features-section {
+    padding: 60px 0 120px;
+    .section-heading {
+        margin-bottom: 65px;
+    }
+    .single-feature {
+        display: flex;
+        margin-bottom: 65px;
+
+        .single-feature-img {
+            margin-right: 50px;
+        }
+
+        .single-feature-details {
+            h3 {
+                color: #000;
+                margin-bottom: 6px;
+                margin-top: -6px;
+            }
+
+            p {
+                margin-bottom: -8px;
+            }
+        }
+    }
+}
+
+@include lg {
+    #features-section {
+        padding: 30px 0 90px;
+
+        .section-heading {
+            width: 50%;
+        }
+
+        .single-feature {
+            .single-feature-img {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@include md {
+    #features-section {
+        padding: 10px 0 50px;
+        .section-heading {
+            width: 65%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include sm {
+    #features-section {
+        .section-heading {
+            width: 75%;
+            h2 {
+                font-size: 40px;
+                line-height: 60px;
+            }
+        }
+    }
+}
+
+@include xs {
+    #features-section {
+        .section-heading {
+            width: 90%;
+        }
+        .single-feature {
+            text-align: center;
+            display: block;
+            margin-bottom: 50px;
+    
+            .single-feature-img {
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@include xxs {
+    #features-section {
+        padding-bottom: 30px;
+        .section-heading {
+            width: 100%;
+            h2 {
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+    }
+}

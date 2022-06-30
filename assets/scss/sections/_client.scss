@@ -1,36 +1,45 @@
 /*-------------------------------CLIENT SECTION STYLES--------------------------------*/
 
-// @include xxl {
-    #client-section {
-        padding: 60px 0;
-    
-        span {
-            font-size: 16px;
-            line-height: 28px;
-            font-weight: 400;
-            color: $main-color;
-            text-align: center;
-            display: block;
-            margin-bottom: 45px;
-        }
-    
-        .client-logo {
-            min-height: 155px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+#client-section {
+    padding: 60px 0;
 
-        .row {
-            justify-content: center;
-        }
+    span {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        color: $main-color;
+        text-align: center;
+        display: block;
+        margin-bottom: 45px;
     }
-// }
+
+    .client-logo {
+        min-height: 155px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: center;
+    }
+}
 
 @include lg {
     #client-section {
         .row {
             justify-content: space-evenly;
+        }
+    }
+}
+
+@include sm {
+    #client-section {
+        span {
+            margin-bottom: 30px;
+        }
+        .client-logo {
+            min-height: 100px;
         }
     }
 }

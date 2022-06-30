@@ -11,7 +11,7 @@
         h4 {
             font-weight: 400;
             color: #686868;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         h1 {
@@ -81,11 +81,18 @@
     }
 }
 
+@include lg {
+    #banner-section {
+        .banner-content {
+            padding-top: 50px;
+        }
+    }
+}
+
 @include md {
     #banner-section {
         .banner-content {
-            padding: 30px 0;
-
+            padding-top: 30px;
             h1 {
                 font-size: 45px;
                 line-height: 60px;
@@ -115,7 +122,9 @@
 
 @include sm {
     #banner-section {
+        padding: 20px 0 30px;
         .banner-content {
+            padding: 0px;
             width: 80%;
         }
 
@@ -142,6 +151,7 @@
 
 @include xxs {
     #banner-section {
+        padding: 20px 0;
         background-size: cover;
         .banner-content {
             h4 {

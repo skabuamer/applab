@@ -1,7 +1,41 @@
-/*  */
+/* ---------------------------------------HEADER SECTION STYLES---------------------------------------- */
 header {
-    @include xxs{
+    padding: 40px 0px;
+
+    a {
+        display: inline-block;
+        margin-left: 35px;
+        color: $main-color;
+        font: {
+            size: 16px;
+            weight : 400;
+        }
+        margin-bottom: 10px;
+    }
+
+    .btn-custom {
+        height: 60px;
+        line-height: 57px;
+        padding: 0px 40px;
+        border-radius: 35px;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .offcanvas.offcanvas-start {
+        width: 40%;
+    }
+}
+
+@include md{
+    header {
         padding: 20px 0px;
+
+        a {
+            margin-left: 15px;
+        }
 
         .btn-custom {
             height: 40px;
@@ -10,56 +44,36 @@ header {
             border-radius: 5px;
         }
 
-        a {
-            display: inline-block;
-            margin-left: 15px;
-            color: $main-color;
-            font: {
-                size: 16px;
-                weight : 400;
-            }
-            margin-bottom: 10px;
+        .navbar-nav {
+            align-items: flex-start;
         }
 
-        .offcanvas.offcanvas-start {
-            width: 80%;
-        }
-    }
-
-    @include xs {
         .offcanvas.offcanvas-start {
             width: 60%;
         }
     }
+}
 
-    @include sm {
+@include sm {
+    header {
         .offcanvas.offcanvas-start {
-            width: 50%;
+            width: 60%;
         }
     }
+}
 
-    @include md {
+@include xs {
+    header {
         .offcanvas.offcanvas-start {
-            width: 40%;
+            width: 70%;
         }
     }
+}
 
-    @include lg {
-        padding: 40px 0px;
-
-        a {
-            margin-left: 35px;
-        }
-
-        .btn-custom {
-            height: 60px;
-            line-height: 57px;
-            padding: 0px 40px;
-            border-radius: 35px;
-        }
-
-        .navbar-nav {
-            align-items: center;
+@include xxs {
+    header {
+        .offcanvas.offcanvas-start {
+            width: 80%;
         }
     }
 }
