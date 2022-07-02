@@ -1,3 +1,4 @@
+/* ---------------------------------------ABOUT SECTION STYLES---------------------------------------- */
 #about-section {
     padding: 120px 0;
 
@@ -65,10 +66,6 @@
                 }
             }
         }
-    
-        .about-content {
-    
-        }
     }
 }
 
@@ -108,10 +105,6 @@
                 }
             }
         }
-    
-        .about-content {
-    
-        }
     }
 }
 
@@ -121,10 +114,6 @@
         padding: 80px 0;
         .about-img {
             text-align: left;
-        }
-    
-        .about-content {
-    
         }
     }
 }
@@ -153,10 +142,6 @@
 
 @include xxs {
     #about-section {
-        .about-img {
-
-        }
-    
         .about-content {
             text-align: center;
 
