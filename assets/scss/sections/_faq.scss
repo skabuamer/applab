@@ -1,0 +1,66 @@
+/*---------------------------------------------FAQ SECTION STYLES-----------------------------------------*/
+#faq-section {
+    padding: 60px 0;
+
+    .section-heading {
+        margin-bottom: 53px;
+    }
+
+    .accordion-item {
+        border: 0;
+        background-color: #f5f7fa;
+        margin-bottom: 10px;
+    }
+    .accordion-header {
+    }
+
+    .accordion-button {
+        color: $main-color;
+        background-color: #f5f7fa;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 15px 50px;
+        font-weight: 600;
+        transition: all .4s ease;
+
+        &::after {
+            // color: $main-color;
+        }
+    }
+
+    .accordion-button:not(.collapsed) {
+        padding-top: 42px;
+    }
+
+    .accordion-body {
+        padding: 20px 50px;
+    }
+}
+
+@include lg {
+    #faq-section {
+        .section-heading {
+            width: 70%;
+        }
+    }
+}
+
+@include md {
+    #faq-section {
+        padding: 30px 0;
+    }
+}
+
+@include sm {
+    #faq-section {
+        .section-heading {
+            width: 100%;
+        }
+        .accordion-button {
+            padding: 15px 25px;
+        }
+        .accordion-body {
+            padding: 20px 25px;
+        }
+    }
+}

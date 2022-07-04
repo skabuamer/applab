@@ -146,10 +146,17 @@ a:hover, a:focus, a:visited {
   text-decoration: underline solid #fff2ee 8px;
   text-decoration-skip-ink: none;
 }
+@media screen and (max-width: 479px) {
+  .section-heading h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+}
 
 /* ---------------------------------------HEADER SECTION STYLES---------------------------------------- */
 header {
   padding: 40px 0px;
+  background-color: #fff;
 }
 header a {
   display: inline-block;
@@ -730,6 +737,37 @@ header .offcanvas.offcanvas-start {
   object-fit: cover;
 }
 
+@media screen and (max-width: 1199px) {
+  #portfolio-section .section-heading {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #portfolio-section {
+    padding: 65px 0 55px;
+  }
+  #portfolio-section .section-heading {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #portfolio-section .section-heading {
+    width: 100%;
+  }
+  #portfolio-section .section-heading h2 {
+    margin-bottom: 70px;
+  }
+  #portfolio-section .single-portfolio {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #portfolio-section .section-heading h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
 /*---------------------------------------------PRICE SECTION STYLES-----------------------------------------*/
 #price-section {
   padding: 120px 0 60px;
@@ -814,4 +852,285 @@ header .offcanvas.offcanvas-start {
     font-size: 35px;
     line-height: 55px;
   }
+}
+/*---------------------------------------------TESTIMONIAL SECTION STYLES-----------------------------------------*/
+#testimonial-section {
+  padding: 60px 0;
+}
+#testimonial-section .section-heading {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+#testimonial-section .slider-buttons {
+  position: relative;
+}
+#testimonial-section .slider-buttons button {
+  border: 1px solid #b8b8b9;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  transition: all 0.4s ease;
+}
+#testimonial-section .slider-buttons button:hover {
+  background-color: #b8b8b9;
+}
+#testimonial-section .slider-buttons button:hover svg {
+  color: #0000ff;
+}
+#testimonial-section .slider-buttons button svg {
+  width: 18px;
+  color: #b8b8b9;
+  transition: all 0.4s ease;
+}
+#testimonial-section .left-btn {
+  margin-right: 16px;
+}
+#testimonial-section .single-testimonial h3 {
+  margin-bottom: 21px;
+}
+#testimonial-section .single-testimonial p {
+  margin-bottom: 52px;
+}
+#testimonial-section .single-testimonial .reviewer {
+  display: flex;
+  align-items: center;
+}
+#testimonial-section .single-testimonial .reviewer .reviewer-img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+#testimonial-section .single-testimonial .reviewer .reviewer-details {
+  margin-left: 30px;
+}
+#testimonial-section .single-testimonial .reviewer .reviewer-details span {
+  display: block;
+}
+#testimonial-section .single-testimonial .reviewer .reviewer-details .reviewer-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #242f51;
+}
+#testimonial-section .single-testimonial .reviewer .reviewer-details .reviewer-info {
+  font-size: 18px;
+  font-weight: 400;
+  color: #616368;
+}
+
+@media screen and (max-width: 991px) {
+  #testimonial-section {
+    text-align: center;
+  }
+  #testimonial-section .section-heading {
+    text-align: center;
+  }
+  #testimonial-section .reviewer {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  #testimonial-section {
+    padding: 45px 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  #testimonial-section {
+    padding: 30px 0;
+  }
+  #testimonial-section .section-heading h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+}
+/* ---------------------------------------TEAM SECTION STYLES---------------------------------------- */
+#team-section {
+  padding: 60px 0;
+}
+#team-section .section-heading {
+  margin-bottom: 52px;
+}
+#team-section .single-member {
+  text-align: center;
+}
+#team-section .single-member .single-member-img {
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 23px;
+}
+#team-section .single-member .single-member-img:hover .single-member-hover {
+  opacity: 100%;
+}
+#team-section .single-member .single-member-img img {
+  width: 270px;
+  max-width: 100%;
+}
+#team-section .single-member .single-member-hover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+  transition: all 0.4s ease;
+}
+#team-section .single-member .single-member-hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #161618;
+  opacity: 70%;
+  z-index: 0;
+}
+#team-section .single-member .single-member-hover a {
+  background-color: #242f51;
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+  width: 35px;
+  height: 36px;
+  border: 1px solid #242f51;
+  border-radius: 50%;
+  z-index: 1;
+}
+#team-section .single-member .single-member-hover a:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+#team-section .single-member .single-member-name {
+  margin-bottom: -6px;
+  text-transform: capitalize;
+}
+#team-section .single-member .single-member-info {
+  text-transform: capitalize;
+  color: #aab6bb;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*---------------------------------------------FAQ SECTION STYLES-----------------------------------------*/
+#faq-section {
+  padding: 60px 0;
+}
+#faq-section .section-heading {
+  margin-bottom: 53px;
+}
+#faq-section .accordion-item {
+  border: 0;
+  background-color: #f5f7fa;
+  margin-bottom: 10px;
+}
+#faq-section .accordion-button {
+  color: #242f51;
+  background-color: #f5f7fa;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 15px 50px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+#faq-section .accordion-button:not(.collapsed) {
+  padding-top: 42px;
+}
+#faq-section .accordion-body {
+  padding: 20px 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  #faq-section .section-heading {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #faq-section {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #faq-section .section-heading {
+    width: 100%;
+  }
+  #faq-section .accordion-button {
+    padding: 15px 25px;
+  }
+  #faq-section .accordion-body {
+    padding: 20px 25px;
+  }
+}
+/* ---------------------------------------APP DOWNLOAD SECTION STYLES---------------------------------------- */
+#app-section {
+  padding: 60px 0;
+}
+#app-section .section-heading {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 19px;
+}
+#app-section .section-heading h2 {
+  text-decoration: none;
+}
+#app-section .app-info p {
+  margin-bottom: 41px;
+}
+#app-section .download-btns .play-store-btn {
+  margin-right: 25px;
+}
+#app-section .app-download-img img {
+  width: 837px;
+}
+
+@media screen and (max-width: 479px) {
+  #app-section .section-heading {
+    text-align: center;
+  }
+  #app-section .section-heading h2 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  #app-section .app-info {
+    text-align: center;
+  }
+  #app-section .download-btns .play-store-btn {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+/*---------------------------------------------FOOTER SECTION STYLES-----------------------------------------*/
+footer {
+  background-color: #09142e;
+  padding: 100px 0;
+}
+footer .footer-content ul {
+  margin: 40px 0;
+}
+footer .footer-content ul a {
+  color: #fff;
+  font-size: 16px;
+}
+footer .footer-content .socials {
+  margin-bottom: 85px;
+  font-size: 30px;
+}
+footer .footer-content .socials a {
+  color: #fff;
+  opacity: 0.2;
+  margin: 0px 10px;
+}
+footer .footer-content .socials a:hover {
+  opacity: 1;
+}
+footer .footer-content .copyright {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  opacity: 21%;
 }/*# sourceMappingURL=style.css.map */

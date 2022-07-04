@@ -1,0 +1,86 @@
+/* ---------------------------------------TEAM SECTION STYLES---------------------------------------- */
+#team-section {
+    padding: 60px 0;
+
+    .section-heading {
+        margin-bottom: 52px;
+    }
+    .single-member {
+        text-align: center;
+
+        .single-member-img {
+            position: relative;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 23px;
+            &:hover {
+                .single-member-hover {
+                    opacity: 100%;
+                }
+            }
+            img {
+                width: 270px;
+                max-width: 100%;
+            }
+        }
+
+        .single-member-hover {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0%;
+            transition: all .4s ease;
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #161618;
+                opacity: 70%;
+                z-index: 0;
+            }
+
+            a {
+                background-color: #242f51;
+                color: #fff;
+                margin: 5px;
+                padding: 5px;
+                width: 35px;
+                height: 36px;
+                border: 1px solid $main-color;
+                border-radius: 50%;
+                z-index: 1;
+
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+
+        .single-member-name {
+            margin-bottom: -6px;
+            text-transform: capitalize;
+        }
+
+        .single-member-info {
+            text-transform: capitalize;
+            color: #aab6bb;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}
+
+@include lg {
+    #team-section {
+
+    }
+}

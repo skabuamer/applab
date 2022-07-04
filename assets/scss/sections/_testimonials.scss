@@ -1,0 +1,114 @@
+/*---------------------------------------------TESTIMONIAL SECTION STYLES-----------------------------------------*/
+#testimonial-section {
+    padding: 60px 0;
+
+    .section-heading {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .slider-buttons {
+        position: relative;
+        button {
+            border: 1px solid #b8b8b9;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            background-color: #fff;
+            transition: all .4s ease;
+            &:hover {
+                background-color: #b8b8b9;
+                svg {
+                    color: #0000ff;
+                }
+            }
+            svg {
+                width: 18px;
+                color: #b8b8b9;
+                transition: all .4s ease;
+            }
+        }
+    }
+
+    .left-btn {
+        margin-right: 16px;
+    }
+
+    .single-testimonial {
+        h3 {
+            margin-bottom: 21px;
+        }
+
+        p {
+            margin-bottom: 52px;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            .reviewer-img {
+                img {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    max-width: 100%;
+                }
+            }
+
+            .reviewer-details {
+                margin-left: 30px;
+                span {
+                    display: block;
+                }
+                .reviewer-name {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $main-color;
+                }
+
+                .reviewer-info {
+                    font: {
+                        size : 18px;
+                        weight : 400;
+                    }
+                    color: $color-3;
+                }
+            }
+        }
+    }
+}
+
+@include lg {
+    
+}
+
+@include md {
+    #testimonial-section {
+        text-align: center;
+        .section-heading {
+            text-align: center;
+        }
+        .reviewer {
+            justify-content: center;
+        }
+    }
+}
+
+@include xs {
+    #testimonial-section {
+        padding: 45px 0;
+    }
+}
+
+@include xxs {
+    #testimonial-section {
+        padding: 30px 0;
+        .section-heading {
+            h2 {
+                font-size: 35px;
+                line-height: 55px;
+            }
+        }
+    }
+}

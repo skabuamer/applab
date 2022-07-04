@@ -1,0 +1,61 @@
+/* ---------------------------------------APP DOWNLOAD SECTION STYLES---------------------------------------- */
+#app-section {
+    padding: 60px 0;
+    .section-heading {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 19px;
+        h2 {
+            text-decoration: none;
+        }
+    }
+
+    .app-info {
+        p {
+            margin-bottom: 41px;
+        }
+    }
+
+    .download-btns {
+        .play-store-btn {
+            margin-right: 25px;
+        }
+    }
+
+    .app-download-img {
+        img {
+            width: 837px;
+        }
+    }
+
+}
+
+@include lg {
+    #app-section {
+    
+    }
+}
+
+@include xxs {
+    #app-section {
+        .section-heading {
+            text-align: center;
+            h2 {
+                font-size: 35px;
+                line-height: 55px;
+            }
+        }
+         
+        .app-info {
+            text-align: center;
+        }
+
+        .download-btns {
+            .play-store-btn {
+                margin-right: 0px;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+        }
+    }
+}

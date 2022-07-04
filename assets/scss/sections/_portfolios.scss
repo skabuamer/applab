@@ -113,3 +113,49 @@
         }
     }
 }
+
+@include lg {
+    #portfolio-section {
+        .section-heading {
+            width: 60%;
+        }
+    }
+}
+
+
+@include md {
+    #portfolio-section {
+        padding: 65px 0 55px;
+        .section-heading {
+            width: 70%;
+        }
+    }
+}
+
+
+@include sm {
+    #portfolio-section {
+        .section-heading {
+            width: 100%;
+            h2 {
+                margin-bottom: 70px;
+            }
+        }
+        .single-portfolio {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@include sm {
+    #portfolio-section {
+        .section-heading {
+            h2 {
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+    }
+}

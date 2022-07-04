@@ -57,5 +57,10 @@ a:hover,a:focus,a:visited {
     h2 {
         text-decoration: underline solid #fff2ee 8px;
         text-decoration-skip-ink: none;
+
+        @include xxs {
+            font-size: 35px;
+            line-height: 55px;
+        }
     }
 }
