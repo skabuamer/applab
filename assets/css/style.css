@@ -560,7 +560,7 @@ header .offcanvas.offcanvas-start {
 #about-section .about-content ul li {
   margin-bottom: 10px;
 }
-#about-section .about-content ul li i {
+#about-section .about-content ul li svg {
   margin-right: 10px;
   color: #ff8257;
 }
