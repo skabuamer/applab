@@ -3,10 +3,10 @@
     background-image: url(../img/portfolios/portfolio-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px 0px;
+    padding: 120px 0px 60px;
     position: relative;
     z-index: 1;
-    &::after {
+    &::before {
         content: '';
         position: absolute;
         top: 0;
@@ -15,6 +15,17 @@
         height: 100%;
         background-color: #053448;
         opacity: 98%;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        background-color: #fff;
         z-index: -1;
     }
 
@@ -73,6 +84,10 @@
 
             svg {
                 font-size: 25px;
+                transition: all .4s ease;
+                &:hover {
+                    color: $main-color;
+                }
             }
 
             h3 {
@@ -100,6 +115,11 @@
             color: #fff;
             z-index: 100;
             cursor: pointer;
+            transition: all .4s ease;
+
+            &:hover {
+                color: $color-2;
+            }
         }
 
         img {
@@ -107,7 +127,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            width: 500px;
+            width: 45%;
             border-radius: 10px;
             object-fit: cover;
         }
@@ -118,6 +138,12 @@
     #portfolio-section {
         .section-heading {
             width: 60%;
+        }
+
+        #popup-image {
+            img {
+                width: 50%;
+            }
         }
     }
 }
@@ -144,6 +170,11 @@
         .single-portfolio {
             margin: 0 auto;
             margin-bottom: 30px;
+        }
+        #popup-image {
+            img {
+                width: 80%;
+            }
         }
     }
 }

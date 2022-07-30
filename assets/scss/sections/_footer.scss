@@ -39,3 +39,33 @@ footer {
         }
     }
 }
+
+@include md{
+    footer {
+        padding: 60px 0;
+    }
+}
+
+@include sm{
+    footer {
+        .footer-content {
+            .socials {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@include xxs{
+    footer {
+        .footer-content {
+            ul {
+                margin: 20px 0;
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

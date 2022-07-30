@@ -316,7 +316,7 @@ header .offcanvas.offcanvas-start {
 }
 @media screen and (max-width: 767px) {
   #banner-section {
-    padding: 20px 0 30px;
+    padding: 65px 0;
   }
   #banner-section .banner-content {
     padding: 0px;
@@ -334,7 +334,7 @@ header .offcanvas.offcanvas-start {
 }
 @media screen and (max-width: 479px) {
   #banner-section {
-    padding: 20px 0;
+    padding: 40px 0;
     background-size: cover;
   }
   #banner-section .banner-content h4 {
@@ -642,11 +642,11 @@ header .offcanvas.offcanvas-start {
   background-image: url(../img/portfolios/portfolio-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0px;
+  padding: 120px 0px 60px;
   position: relative;
   z-index: 1;
 }
-#portfolio-section::after {
+#portfolio-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -655,6 +655,16 @@ header .offcanvas.offcanvas-start {
   height: 100%;
   background-color: #053448;
   opacity: 98%;
+  z-index: -1;
+}
+#portfolio-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
   z-index: -1;
 }
 #portfolio-section .section-heading h2 {
@@ -703,6 +713,10 @@ header .offcanvas.offcanvas-start {
 }
 #portfolio-section .single-portfolio .single-portfolio-info svg {
   font-size: 25px;
+  transition: all 0.4s ease;
+}
+#portfolio-section .single-portfolio .single-portfolio-info svg:hover {
+  color: #242f51;
 }
 #portfolio-section .single-portfolio .single-portfolio-info h3 {
   color: #fff;
@@ -726,13 +740,17 @@ header .offcanvas.offcanvas-start {
   color: #fff;
   z-index: 100;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+#portfolio-section #popup-image span:hover {
+  color: #FE6282;
 }
 #portfolio-section #popup-image img {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 45%;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -740,6 +758,9 @@ header .offcanvas.offcanvas-start {
 @media screen and (max-width: 1199px) {
   #portfolio-section .section-heading {
     width: 60%;
+  }
+  #portfolio-section #popup-image img {
+    width: 50%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -760,6 +781,9 @@ header .offcanvas.offcanvas-start {
   #portfolio-section .single-portfolio {
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+  #portfolio-section #popup-image img {
+    width: 80%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1133,4 +1157,23 @@ footer .footer-content .copyright {
   color: #fff;
   font-weight: 400;
   opacity: 21%;
+}
+
+@media screen and (max-width: 991px) {
+  footer {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .footer-content .socials {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 479px) {
+  footer .footer-content ul {
+    margin: 20px 0;
+  }
+  footer .footer-content ul a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

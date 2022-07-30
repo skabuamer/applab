@@ -6,25 +6,20 @@ document.querySelector('#popup-video span').onclick = () => {
     document.getElementById("popup-video").style.display = 'none';
 }
 
-// document.querySelectorAll("#portfolio-section .row img").forEach(imag => {
-//     imag.onclick = () => {
-//         document.querySelector('.popup-image').style.display = 'block';
-//         document.querySelector('.popup-image img').src = imag.getAttribute('src');
-//     }
-// })
 
-// document.querySelector('.single-portfolio-info svg').onclick = () => {
-//     document.getElementById("popup-image").style.display = 'block';
-// }
+const popupImage = document.getElementById('popup-image');
+const selectedImage = document.getElementById('selected-img');
+const expand = document.querySelectorAll('.single-portfolio-info svg');
 
-// document.querySelectorAll('.single-portfolio img').forEach(imag => {
-//     console.log(imag.outerHTML)
-//     // document.getElementById("popup-image").style.display = 'block';
 
-//     // document.querySelectorAll("#portfolio-section .row img").forEach(imag => {
-//         imag.onclick = () => {
-//             document.querySelector('.popup-image').style.display = 'block';
-//             document.querySelector('.popup-image img').src = imag.getAttribute('src');
-//         }
-//     // })
-// })
+for (let i = 0; i < expand.length; i++) {
+    const element = expand[i];
+    element.addEventListener('click', () => {
+        popupImage.style.display = 'block';
+        selectedImage.src = `/assets/img/portfolios/portfolio-${i}.jpg`
+    })
+}
+
+document.querySelector('#popup-image span').onclick = () => {
+    document.getElementById("popup-image").style.display = 'none';
+}

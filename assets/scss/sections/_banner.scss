@@ -123,7 +123,7 @@
 
 @include sm {
     #banner-section {
-        padding: 20px 0 30px;
+        padding: 65px 0 ;
         .banner-content {
             padding: 0px;
             width: 80%;
@@ -152,7 +152,7 @@
 
 @include xxs {
     #banner-section {
-        padding: 20px 0;
+        padding: 40px 0;
         background-size: cover;
         .banner-content {
             h4 {
