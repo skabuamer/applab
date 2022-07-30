@@ -16,7 +16,7 @@ for (let i = 0; i < expand.length; i++) {
     const element = expand[i];
     element.addEventListener('click', () => {
         popupImage.style.display = 'block';
-        selectedImage.src = `/assets/img/portfolios/portfolio-${i}.jpg`
+        selectedImage.src = `assets/img/portfolios/portfolio-${i}.jpg`
     })
 }
 
