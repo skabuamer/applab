@@ -1,6 +1,6 @@
 /* ---------------------------------------APP DOWNLOAD SECTION STYLES---------------------------------------- */
 #app-section {
-    padding: 60px 0;
+    padding: 60px 0 120px;
     .section-heading {
         width: 100%;
         text-align: left;
@@ -27,12 +27,10 @@
             width: 837px;
         }
     }
-
 }
 
 @include lg {
     #app-section {
-    
     }
 }
 
@@ -40,12 +38,8 @@
     #app-section {
         .section-heading {
             text-align: center;
-            h2 {
-                font-size: 35px;
-                line-height: 55px;
-            }
         }
-         
+
         .app-info {
             text-align: center;
         }

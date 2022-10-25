@@ -1,7 +1,50 @@
 // colors
-$main-color : #242f51;
-$color-2 : #FE6282;
-$color-3 : #616368;
 
-// fonts 
-$main-font : 'Poppins', sans-serif;
+:root {
+    --main-clr: #242f51;
+    --seondary-clr: #fe6282;
+    --third-clr: #616368;
+    --fourth-clr: #fbf8f8;
+    --fifth-clr: #f5f7fa;
+    --sixth-clr: #4d4d4d;
+    --seventh-clr: #d7d7d7;
+    --eighth-clr: #fff2ee;
+    --ninth-clr: #686868;
+    --shadow: #ccc;
+    --theme-1: #fff;
+    --theme-2: rgb(68, 68, 68);
+    --black: #000;
+}
+
+.dark-mode {
+    --main-clr: #a6b3d7;
+    --seondary-clr: #fe6282;
+    --third-clr: #c3c3c3;
+    --fourth-clr: #3d3d3d;
+    --fifth-clr: #3d3d3d;
+    --sixth-clr: #a1a1a1;
+    --seventh-clr: #5a5a5a;
+    --eighth-clr: #464646;
+    --ninth-clr: #b5b4b4;
+    --shadow: #000;
+    --theme-2: #fff;
+    --theme-1: rgb(25 28 34);
+    --black: #fff;
+}
+
+$main-color: var(--main-clr);
+$color-2: var(--seondary-clr);
+$color-3: var(--third-clr);
+$color-4: var(--fourth-clr);
+$color-5: var(--fifth-clr);
+$color-6: var(--sixth-clr);
+$color-7: var(--seventh-clr);
+$color-8: var(--eighth-clr);
+$color-9: var(--ninth-clr);
+$shadow: var(--shadow);
+$theme-1: var(--theme-1);
+$theme-2: var(--theme-2);
+$black: var(--black);
+
+// fonts
+$main-font: "Poppins", sans-serif;

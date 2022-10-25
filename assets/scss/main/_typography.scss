@@ -1,10 +1,14 @@
 /*-----------------------------------------------Typography-----------------------------------------------*/
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: $main-color;
 }
@@ -18,17 +22,52 @@ h1 {
 h2 {
     font-size: 50px;
     line-height: 70px;
+
+    @include xl {
+        font-size: 45px;
+        line-height: 65px;
+    }
+
+    @include lg {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    @include md {
+        font-size: 35px;
+        line-height: 55px;
+    }
+
+    @include sm {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    @include xxs {
+        font-size: 25px;
+        line-height: 45px;
+    }
 }
 
 h3 {
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
+
+    @include lg {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 h4 {
     font-size: 18px;
     line-height: 30px;
+
+    @include lg {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
 
 h5 {
